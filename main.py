@@ -31,8 +31,8 @@ if __name__ == '__main__':
     ###############
     # Directories #
     ###############
-    parser.add_argument('--data_dir', type=str, default='D:/Dataset/synthetic/Rain100H/nonpair/Train')
-    parser.add_argument('--valid_data', type=str, default='D:/Dataset/synthetic/Rain100H/nonpair/Test')
+    parser.add_argument('--data_dir', type=str, default='---train data root---')
+    parser.add_argument('--valid_data', type=str, default='---validation data root---')
 
     #########
     # Train #
@@ -57,7 +57,7 @@ if __name__ == '__main__':
     # Save image #
     ##############
     parser.add_argument('--save_image', type=bool, default=True, choices=[True, False])
-    parser.add_argument('--save_file_name', default='i2r2_16_100H', type=str)
+    parser.add_argument('--save_file_name', default='------save_file_root--------', type=str)
 
     args = parser.parse_args()
     args.model_save_dir = os.path.join('results/', args.save_file_name, 'train_results/')
