@@ -29,7 +29,6 @@ After setting the data_dir and valid_data in main.py, then run
 
 ~~~
 python main.py --data_dir='---train dataset path---' --valid_data='---validation dataset path---' --batch_size=16 --patch_size=64 --num_epoch=300 --learning_rate=5e-4 --save_file_name='---fill your save result path---'
-
 ~~~
 
 ### Testing
