@@ -74,11 +74,11 @@ parser.add_argument('--data_dir', type=str, default='....test_image data path...
 parser.add_argument('--save_image', type=bool, default=True, choices=[True, False])
 parser.add_argument('--save_file_name', default='save_file_path', type=str)
 parser.add_argument('--num_worker', type=int, default=2)
-
+parser.add_argument('--test_model', type=str, default='...Pretrained_model root...')
 args = parser.parse_args()
 
 args.result_dir = os.path.join('results/', args.save_file_name, 'Best_image/')
-args.test_model = os.path.join('results/', args.save_file_name, 'train_results/', 'Best.pt')
+#args.test_model = os.path.join('results/', args.save_file_name, 'train_results/', 'Best.pt')
 
 model = build_net()
 
