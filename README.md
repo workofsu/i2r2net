@@ -19,6 +19,7 @@ The project is built with PyTorch 3.8, PyTorch 1.8.1. CUDA 10.2, cuDNN 7.6.5 For
 conda install pytorch=1.8.1 torchvision=0.9.1 -c pytorch
 pip install tensorboard einops scikit-image pytorch_msssim opencv-python
 ~~~
+or using requirements.txt
 
 ### Download the dataset and model
 
@@ -27,16 +28,17 @@ pip install tensorboard einops scikit-image pytorch_msssim opencv-python
 After setting the data_dir and valid_data in main.py, then run
 
 ~~~
-python main.py
+python main.py --data_dir='---train dataset path---' --valid_data='---validation dataset path---' --batch_size=16 --patch_size=64 --num_epoch=300 --learning_rate=5e-4 --save_file_name='---fill your save result path---'
+
 ~~~
 
 ### Testing
 After setting the data_dir and test_model in test.py, then run
 ~~~
-python test.py
+ python test.py --data_dir='---test dataset path---' --save_file_name='---your save result path' --test_model='---pretrained model path---'
 ~~~
 
-the resulting images will be saved.
+the result images will be saved.
 
 Next, run the matlab file to get the scores.
 
