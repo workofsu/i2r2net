@@ -1,5 +1,4 @@
-## [Iterative image rain removal network using consecutive residual long short-term memory](https://doi.org/10.1016/j.neucom.2024.127752)
-
+## [Iterative image rain removal network using consecutive residual long short-term memory](https://doi.org/10.1016/j.neucom.2024.127752)_Neurocomputing 2024
 ### Abstract
 Image rain removal is designed to effectively separate rain streaks from the background image layer. However, 
 rain streaks in real-world scenarios vary in density, shape, and direction, making it difficult to decompose rainy 
@@ -14,12 +13,11 @@ comprising three primary modules is introduced to progressively enhance rainy im
 demonstrate that our method outperforms state-of-the-art methods in image rain removal
 
 ### Requirement
-The project is built with PyTorch 3.8, PyTorch 1.8.1. CUDA 10.2, cuDNN 7.6.5 For installing, follow these instructions:
+The project is built with Python 3.8, PyTorch 1.8.1. CUDA 10.2, cuDNN 7.6.5 For installing, follow these instructions:
 ~~~
 conda install pytorch=1.8.1 torchvision=0.9.1 -c pytorch
-pip install tensorboard einops scikit-image pytorch_msssim opencv-python
+pip install tensorboard einops scikit-image pytorch_msssim opencv-python matplotlib tqdm
 ~~~
-or using requirements.txt
 
 ### Download the dataset and model
 
@@ -53,6 +51,9 @@ if you find this project useful for your research, please consider citing:
   publisher={Elsevier}
 }
 ~~~
+
+### Contact
+If you have any question, please contact <a herf="mailto:susu21@pusan.ac.kr">susu21@pusan.ac.kr</a>
 
 
 

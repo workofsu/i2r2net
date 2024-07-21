@@ -14,7 +14,7 @@ import torch.nn.functional as f
 
 
 class DerainDataset(Dataset):
-    def __init__(self, image_dir, transform=None, is_test=False):
+    def __init__(self, image_dir,  transform=None, is_test=False):
         self.image_dir = image_dir
         self.image_list = os.listdir(os.path.join(image_dir, 'rain/'))
         self._check_image(self.image_list)
